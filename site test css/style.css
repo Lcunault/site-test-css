@@ -1,0 +1,875 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+textarea:focus, input:focus{outline: none;}
+*:focus {outline: none;}
+
+body {
+	width: 100%;
+	font-family: 'Amatic SC', cursive;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.1;
+	-moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: 2.5s ease-in-out;
+}
+body.arthurmorgan {background-color: #B80410;}
+body.thefrontier {background-color: #BD9474;}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 300;
+	font-style: normal; 
+	line-height: 1.3;
+}
+
+h1 {font-size: 30px;}
+h2 {font-size: 22px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+.normal {font-weight: 400;}
+.semibold {font-weight: 600;}
+.bold {font-weight: 700;}
+
+p {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 300;
+	line-height: 1.3;
+	font-size: 16px;
+}
+
+b, strong {font-weight: bold;}
+i {font-style: italic;}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input {-webkit-appearance: none;}
+
+
+.wrapper {
+	width: 100%;
+	float: left;
+}
+
+.full-width {
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+.fixed-width {
+	width: 940px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+
+
+
+
+.console {
+	width: 700px;
+	padding: 0 0 30px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+.console h1 {
+	margin: 10px 0;
+	font-size: 80px;
+	color: #FFFFFF;
+}
+.console button {
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 5px 10px;
+	background: none;
+	cursor: pointer;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	font-size: 30px;
+	-moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.console button:hover,
+.arthurmorgan .console button#arthurmorgan,
+.thefrontier .console button#thefrontier {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.stage {
+	width: 960px;
+	margin: 0 auto;
+}
+.main-stage {
+	width: 960px;
+	height: 960px;
+	position: relative;
+	background-size: cover;
+}
+
+.stage-quote {
+	position: relative;
+	margin-bottom: 100px;
+}
+.stage-quote h2 {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 26px;
+	color: #FCA600;
+	-moz-transition: 2s ease-in-out;
+	-o-transition: 2s ease-in-out;
+	-webkit-transition: 2s ease-in-out;
+	transition: 2s ease-in-out;
+}
+.arthurmorgan .quote-arthurmorgan,
+.arthur .quote-arthur {
+	visibility: visible;
+	opacity: 1;
+}
+
+.triangle {
+	position: absolute;
+	width: 100%; 
+	height: 100%;
+}
+
+.t-1,
+.t-31,
+.t-61,
+.t-91 {transition: 1.05s ease-out;}
+
+.t-2,
+.t-32,
+.t-62,
+.t-92 {transition: 1.1s ease-out;}
+
+.t-3,
+.t-33,
+.t-63,
+.t-93 {transition: 1.15s ease-out;}
+
+.t-4,
+.t-34,
+.t-64,
+.t-94 {transition: 1.2s ease-out;}
+
+.t-5,
+.t-35,
+.t-65,
+.t-95 {transition: 1.25s ease-out;}
+
+.t-6,
+.t-36,
+.t-66,
+.t-96 {transition: 1.3s ease-out;}
+
+.t-7,
+.t-37,
+.t-67,
+.t-97 {transition: 1.35s ease-out;}
+
+.t-8,
+.t-38,
+.t-68,
+.t-98 {transition: 1.4s ease-out;}
+
+.t-9,
+.t-39,
+.t-69,
+.t-99 {transition: 1.45s ease-out;}
+
+.t-10,
+.t-40,
+.t-70,
+.t-100 {transition: 1.5s ease-out;}
+
+.t-11,
+.t-41,
+.t-71,
+.t-101 {transition: 1.55s ease-out;}
+
+.t-12,
+.t-42,
+.t-72,
+.t-102 {transition: 1.6s ease-out;}
+
+.t-13,
+.t-43,
+.t-73,
+.t-103 {transition: 1.65s ease-out;}
+
+.t-14,
+.t-44,
+.t-74,
+.t-104 {transition: 1.7s ease-out;}
+
+.t-15,
+.t-45,
+.t-75,
+.t-105 {transition: 1.75s ease-out;}
+
+.t-16,
+.t-46,
+.t-76,
+.t-106 {transition: 1.8s ease-out;}
+
+.t-17,
+.t-47,
+.t-77,
+.t-107 {transition: 1.85s ease-out;}
+
+.t-18,
+.t-48,
+.t-78,
+.t-108 {transition: 1.9s ease-out;}
+
+.t-19,
+.t-49,
+.t-79,
+.t-109 {transition: 1.95s ease-out;}
+
+.t-20,
+.t-50,
+.t-80,
+.t-110 {transition: 2s ease-out;}
+
+.t-21,
+.t-51,
+.t-81,
+.t-111 {transition: 2.05s ease-out;}
+
+.t-22,
+.t-52,
+.t-82,
+.t-112 {transition: 2.1s ease-out;}
+
+.t-23,
+.t-53,
+.t-83,
+.t-113 {transition: 2.15s ease-out;}
+
+.t-24,
+.t-54,
+.t-84,
+.t-114 {transition: 2.2s ease-out;}
+
+.t-25,
+.t-55,
+.t-85,
+.t-115 {transition: 2.25s ease-out;}
+
+.t-26,
+.t-56,
+.t-86,
+.t-116 {transition: 2.3s ease-out;}
+
+.t-27,
+.t-57,
+.t-87,
+.t-117 {transition: 2.35s ease-out;}
+
+.t-28,
+.t-58,
+.t-88,
+.t-118 {transition: 2.4s ease-out;}
+
+.t-29,
+.t-59,
+.t-89,
+.t-119 {transition: 2.45s ease-out;}
+
+.t-30,
+.t-60,
+.t-90,
+.t-120 {transition: 2.5s ease-out;}
+
+
+
+
+/* Arthur Morgan */
+
+.arthurmorgan .t-1 {-webkit-clip-path: polygon(57% 1%, 65% 5%, 69% 18%);}
+.arthurmorgan .t-2 {-webkit-clip-path: polygon(57% 1%, 48% 20%, 69% 18%);}
+.arthurmorgan .t-3 {-webkit-clip-path: polygon(57% 1%, 48% 20%, 43% 5%);}
+.arthurmorgan .t-4 {-webkit-clip-path: polygon(36% 11%, 48% 20%, 43% 5%);}
+.arthurmorgan .t-5 {-webkit-clip-path: polygon(36% 11%, 48% 20%, 37% 22%);}
+
+.arthurmorgan .t-6 {-webkit-clip-path: polygon(58% 25%, 26% 24%, 48% 20%);}
+.arthurmorgan .t-7 {-webkit-clip-path: polygon(58% 25%, 69% 18%, 48% 20%);}
+.arthurmorgan .t-8 {-webkit-clip-path: polygon(58% 25%, 69% 18%, 83% 15%);}
+.arthurmorgan .t-9 {-webkit-clip-path: polygon(68% 21%, 71% 28%, 83% 15%);}
+.arthurmorgan .t-10 {-webkit-clip-path: polygon(22% 29%, 37% 36%, 26% 24%);}
+
+.arthurmorgan .t-11 {-webkit-clip-path: polygon(45% 24%, 37% 36%, 26% 24%);}
+.arthurmorgan .t-12 {-webkit-clip-path: polygon(45% 24%, 37% 36%, 50% 50%);}
+.arthurmorgan .t-13 {-webkit-clip-path: polygon(45% 24%, 58% 25%, 50% 50%);}
+.arthurmorgan .t-14 {-webkit-clip-path: polygon(68% 21%, 58% 25%, 71% 28%);}
+.arthurmorgan .t-15 {-webkit-clip-path: polygon(70% 45%, 58% 25%, 71% 28%);}
+
+.arthurmorgan .t-16 {-webkit-clip-path: polygon(54% 37%, 58% 25%, 66% 38%);}
+.arthurmorgan .t-17 {-webkit-clip-path: polygon(54% 37%, 62% 53%, 66% 38%);}
+.arthurmorgan .t-18 {-webkit-clip-path: polygon(70% 45%, 62% 53%, 66% 38%);}
+.arthurmorgan .t-19 {-webkit-clip-path: polygon(54% 37%, 62% 53%, 50% 50%);}
+.arthurmorgan .t-20 {-webkit-clip-path: polygon(55% 56%, 62% 53%, 50% 50%);}
+
+.arthurmorgan .t-21 {-webkit-clip-path: polygon(55% 56%, 62% 53%, 66% 61%);}
+.arthurmorgan .t-22 {-webkit-clip-path: polygon(69% 46%, 62% 53%, 66% 61%);}
+.arthurmorgan .t-23 {-webkit-clip-path: polygon(43% 48%, 44% 42%, 55% 56%);}
+.arthurmorgan .t-24 {-webkit-clip-path: polygon(43% 48%, 39% 51%, 81% 100%);}
+.arthurmorgan .t-25 {-webkit-clip-path: polygon(43% 48%, 55% 56%, 81% 100%);}
+
+.arthurmorgan .t-26 {-webkit-clip-path: polygon(66% 61%, 55% 56%, 75% 76%);}
+.arthurmorgan .t-27 {-webkit-clip-path: polygon(66% 61%, 67% 56%, 75% 76%);}
+.arthurmorgan .t-28 {-webkit-clip-path: polygon(79% 67%, 67% 56%, 75% 76%);}
+.arthurmorgan .t-29 {-webkit-clip-path: polygon(55% 56%, 81% 100%, 75% 76%);}
+.arthurmorgan .t-30 {-webkit-clip-path: polygon(91% 100%, 81% 100%, 75% 76%);}
+
+.arthurmorgan .t-31 {-webkit-clip-path: polygon(91% 100%, 79% 67%, 75% 76%);}
+.arthurmorgan .t-32 {-webkit-clip-path: polygon(91% 100%, 79% 67%, 87% 71%);}
+.arthurmorgan .t-33 {-webkit-clip-path: polygon(91% 100%, 95% 78%, 87% 71%);}
+.arthurmorgan .t-34 {-webkit-clip-path: polygon(91% 100%, 95% 78%, 98% 100%);}
+.arthurmorgan .t-35 {-webkit-clip-path: polygon(81% 100%, 69% 86%, 66% 100%);}
+
+.arthurmorgan .t-36 {-webkit-clip-path: polygon(45% 58%, 69% 86%, 66% 100%);}
+.arthurmorgan .t-37 {-webkit-clip-path: polygon(45% 58%, 59% 100%, 66% 100%);}
+.arthurmorgan .t-38 {-webkit-clip-path: polygon(45% 58%, 59% 100%, 37% 100%);}
+.arthurmorgan .t-39 {-webkit-clip-path: polygon(45% 58%, 39% 51%, 37% 73%);}
+.arthurmorgan .t-40 {-webkit-clip-path: polygon(45% 58%, 37% 100%, 37% 73%);}
+
+.arthurmorgan .t-41 {-webkit-clip-path: polygon(33% 75%, 37% 100%, 37% 73%);}
+.arthurmorgan .t-42 {-webkit-clip-path: polygon(33% 75%, 37% 100%, 20% 75%);}
+.arthurmorgan .t-43 {-webkit-clip-path: polygon(25% 100%, 37% 100%, 20% 75%);}
+.arthurmorgan .t-44 {-webkit-clip-path: polygon(25% 100%, 20% 100%, 20% 75%);}
+.arthurmorgan .t-45 {-webkit-clip-path: polygon(17% 83%, 20% 100%, 20% 75%);}
+
+.arthurmorgan .t-46 {-webkit-clip-path: polygon(17% 83%, 19% 93%, 8% 85%);}
+.arthurmorgan .t-47 {-webkit-clip-path: polygon(17% 83%, 6% 77%, 8% 85%);}
+.arthurmorgan .t-48 {-webkit-clip-path: polygon(17% 83%, 6% 77%, 7% 66%);}
+.arthurmorgan .t-49 {-webkit-clip-path: polygon(17% 83%, 20% 75%, 14% 71%);}
+.arthurmorgan .t-50 {-webkit-clip-path: polygon(17% 83%, 11% 73%, 14% 71%)}
+
+.arthurmorgan .t-51 {-webkit-clip-path: polygon(11% 60%, 11% 73%, 14% 71%);}
+.arthurmorgan .t-52 {-webkit-clip-path: polygon(11% 60%, 11% 73%, 7% 66%);}
+.arthurmorgan .t-53 {-webkit-clip-path: polygon(39% 51%, 37% 47%, 34% 45%);}
+.arthurmorgan .t-54 {-webkit-clip-path: polygon(39% 51%, 32% 46%, 34% 45%);}
+.arthurmorgan .t-55 {-webkit-clip-path: polygon(39% 51%, 32% 46%, 31% 52%);}
+
+.arthurmorgan .t-56 {-webkit-clip-path: polygon(39% 51%, 32% 58%, 31% 52%);}
+.arthurmorgan .t-57 {-webkit-clip-path: polygon(39% 51%, 32% 58%, 36% 60%);}
+.arthurmorgan .t-58 {-webkit-clip-path: polygon(39% 51%, 38.25% 59%, 36% 60%);}
+.arthurmorgan .t-59 {-webkit-clip-path: polygon(38.25% 59%, 37.75% 65%, 37% 59.6%);}
+.arthurmorgan .t-60 {-webkit-clip-path: polygon(36% 60%, 29% 58%, 32% 58%);}
+
+.arthurmorgan .t-61 {-webkit-clip-path: polygon(36% 60%, 29% 58%, 27% 61%);}
+.arthurmorgan .t-62 {-webkit-clip-path: polygon(32% 60%, 28% 65%, 27% 61%);}
+.arthurmorgan .t-63 {-webkit-clip-path: polygon(32% 60%, 28% 65%, 33% 64%);}
+.arthurmorgan .t-64 {-webkit-clip-path: polygon(32% 60%, 37% 63%, 33% 64%);}
+.arthurmorgan .t-65 {-webkit-clip-path: polygon(32% 60%, 38% 64%, 37% 59%);}
+
+.arthurmorgan .t-66 {-webkit-clip-path: polygon(28% 65%, 38% 68%, 38% 64%);}
+.arthurmorgan .t-67 {-webkit-clip-path: polygon(28% 65%, 37% 63%, 38% 64%);}
+.arthurmorgan .t-68 {-webkit-clip-path: polygon(28% 65%, 38% 68%, 29% 70%);}
+.arthurmorgan .t-69 {-webkit-clip-path: polygon(29% 75%, 33% 75%, 29% 70%);}
+.arthurmorgan .t-70 {-webkit-clip-path: polygon(37% 73%, 33% 75%, 29% 70%);}
+
+.arthurmorgan .t-71 {-webkit-clip-path: polygon(37% 73%, 36% 68%, 29% 70%);}
+.arthurmorgan .t-72 {-webkit-clip-path: polygon(37% 73%, 36% 68%, 38% 71%);}
+.arthurmorgan .t-73 {-webkit-clip-path: polygon(38% 68%, 36% 68%, 38% 71%);}
+.arthurmorgan .t-74 {-webkit-clip-path: polygon(20% 75%, 29% 75%, 29% 70%);}
+.arthurmorgan .t-75 {-webkit-clip-path: polygon(20% 75%, 14% 71%, 29% 70%);}
+
+.arthurmorgan .t-76 {-webkit-clip-path: polygon(13% 68%, 14% 71%, 29% 70%);}
+.arthurmorgan .t-77 {-webkit-clip-path: polygon(29% 67%, 21% 69%, 29% 70%);}
+.arthurmorgan .t-78 {-webkit-clip-path: polygon(11% 60%, 21% 69%, 13% 68%);}
+.arthurmorgan .t-79 {-webkit-clip-path: polygon(11% 60%, 21% 69%, 25% 68%);}
+.arthurmorgan .t-80 {-webkit-clip-path: polygon(11% 60%, 24% 64%, 25% 68%);}
+
+.arthurmorgan .t-81 {-webkit-clip-path: polygon(11% 60%, 24% 64%, 23% 61%);}
+.arthurmorgan .t-82 {-webkit-clip-path: polygon(11% 60%, 10% 56%, 23% 61%);}
+.arthurmorgan .t-83 {-webkit-clip-path: polygon(15% 53%, 10% 56%, 23% 61%);}
+.arthurmorgan .t-84 {-webkit-clip-path: polygon(3% 55%, 7% 57%, 10% 56%);}
+.arthurmorgan .t-85 {-webkit-clip-path: polygon(3% 55%, 1% 52%, 2% 48%);}
+
+.arthurmorgan .t-86 {-webkit-clip-path: polygon(5% 45%, 10% 45%, 2% 48%);}
+.arthurmorgan .t-87 {-webkit-clip-path: polygon(12% 48%, 10% 45%, 12% 55%);}
+.arthurmorgan .t-88 {-webkit-clip-path: polygon(2% 48%, 10% 45%, 12% 55%);}
+.arthurmorgan .t-89 {-webkit-clip-path: polygon(2% 48%, 3% 55%, 12% 55%);}
+.arthurmorgan .t-90 {-webkit-clip-path: polygon(10% 56%, 3% 55%, 12% 55%);}
+
+.arthurmorgan .t-91 {-webkit-clip-path: polygon(30% 43%, 12% 48%, 12% 55%);}
+.arthurmorgan .t-92 {-webkit-clip-path: polygon(30% 43%, 12% 48%, 10% 45%);}
+.arthurmorgan .t-93 {-webkit-clip-path: polygon(30% 43%, 24% 39%, 10% 45%);}
+.arthurmorgan .t-94 {-webkit-clip-path: polygon(5% 45%, 24% 39%, 10% 45%);}
+.arthurmorgan .t-95 {-webkit-clip-path: polygon(5% 45%, 24% 39%, 4% 40%);}
+
+.arthurmorgan .t-96 {-webkit-clip-path: polygon(25% 35%, 24% 39%, 4% 40%);}
+.arthurmorgan .t-97 {-webkit-clip-path: polygon(25% 35%, 24% 39%, 30% 43%);}
+.arthurmorgan .t-98 {-webkit-clip-path: polygon(25% 68%, 19% 50%, 30% 43%);}
+.arthurmorgan .t-99 {-webkit-clip-path: polygon(15% 53%, 19% 50%, 23% 61%);}
+.arthurmorgan .t-100 {-webkit-clip-path: polygon(29% 67%, 26% 63%, 25% 68%);}
+
+.arthurmorgan .t-101 {-webkit-clip-path: polygon(29% 67%, 26% 63%, 27% 58%);}
+.arthurmorgan .t-102 {-webkit-clip-path: polygon(29% 58%, 27% 61%, 27% 58%);}
+.arthurmorgan .t-103 {-webkit-clip-path: polygon(32% 58%, 30% 43%, 27% 58%);}
+.arthurmorgan .t-104 {-webkit-clip-path: polygon(31% 52%, 30% 43%, 32% 46%);}
+.arthurmorgan .t-105 {-webkit-clip-path: polygon(31% 42%, 28% 40%, 32% 46%);}
+
+.arthurmorgan .t-106 {-webkit-clip-path: polygon(27% 39%, 29% 37%, 25% 35%);}
+.arthurmorgan .t-107 {-webkit-clip-path: polygon(28% 35%, 29% 37%, 25% 35%);}
+.arthurmorgan .t-108 {-webkit-clip-path: polygon(20% 35%, 17% 37%, 25% 35%);}
+.arthurmorgan .t-109 {-webkit-clip-path: polygon(20% 35%, 25% 34%, 25% 35%);}
+.arthurmorgan .t-110 {-webkit-clip-path: polygon(9% 36%, 5% 40%, 10% 39%);}
+
+.arthurmorgan .t-111 {-webkit-clip-path: polygon(9% 36%, 5% 40%, 8% 36%);}
+.arthurmorgan .t-112 {-webkit-clip-path: polygon(7% 36%, 5% 40%, 8% 36%);}
+.arthurmorgan .t-113 {-webkit-clip-path: polygon(57% 58%, 59% 60%, 50% 64%);}
+.arthurmorgan .t-114 {-webkit-clip-path: polygon(61% 62%, 59% 60%, 52% 66%);}
+.arthurmorgan .t-115 {-webkit-clip-path: polygon(61% 62%, 63% 64%, 54% 68%);}
+
+.arthurmorgan .t-116 {-webkit-clip-path: polygon(65% 66%, 63% 64%, 56% 70%);}
+.arthurmorgan .t-117 {-webkit-clip-path: polygon(65% 66%, 67% 68%, 58% 73%);}
+.arthurmorgan .t-118 {-webkit-clip-path: polygon(69% 70%, 67% 68%, 61% 75%);}
+.arthurmorgan .t-119 {-webkit-clip-path: polygon(69% 70%, 71% 72%, 63% 78%);}
+.arthurmorgan .t-120 {-webkit-clip-path: polygon(73% 74%, 71% 72%, 65% 81%);}
+
+/* Black */
+.arthurmorgan .t-1,
+.arthurmorgan .t-2,
+.arthurmorgan .t-4,
+.arthurmorgan .t-6,
+.arthurmorgan .t-7,
+.arthurmorgan .t-8,
+.arthurmorgan .t-9,
+.arthurmorgan .t-11,
+.arthurmorgan .t-17,
+.arthurmorgan .t-18,
+.arthurmorgan .t-19,
+.arthurmorgan .t-26,
+.arthurmorgan .t-27,
+.arthurmorgan .t-28,
+.arthurmorgan .t-31,
+.arthurmorgan .t-33,
+.arthurmorgan .t-34,
+.arthurmorgan .t-35,
+.arthurmorgan .t-36,
+.arthurmorgan .t-37,
+.arthurmorgan .t-38,
+.arthurmorgan .t-40,
+.arthurmorgan .t-41,
+.arthurmorgan .t-42,
+.arthurmorgan .t-43,
+.arthurmorgan .t-49,
+.arthurmorgan .t-50,
+.arthurmorgan .t-51,
+.arthurmorgan .t-88,
+.arthurmorgan .t-89,
+.arthurmorgan .t-102,
+.arthurmorgan .t-103 {background-color: #000000;}
+
+/* White */
+.arthurmorgan .t-5,
+.arthurmorgan .t-10,
+.arthurmorgan .t-12,
+.arthurmorgan .t-23,
+.arthurmorgan .t-44,
+.arthurmorgan .t-45,
+.arthurmorgan .t-46,
+.arthurmorgan .t-47,
+.arthurmorgan .t-48,
+.arthurmorgan .t-52,
+.arthurmorgan .t-84,
+.arthurmorgan .t-85,
+.arthurmorgan .t-86,
+.arthurmorgan .t-87,
+.arthurmorgan .t-90,
+.arthurmorgan .t-94,
+.arthurmorgan .t-105,
+.arthurmorgan .t-107,
+.arthurmorgan .t-109,
+.arthurmorgan .t-111 {background-color: #FFFFFF;}
+
+/* Red */
+.arthurmorgan .t-3,
+.arthurmorgan .t-24,
+.arthurmorgan .t-25,
+.arthurmorgan .t-29,
+.arthurmorgan .t-30,
+.arthurmorgan .t-32,
+.arthurmorgan .t-39,
+.arthurmorgan .t-59 {background-color: #D70001;}
+
+/* Skin 1 */
+.arthurmorgan .t-14,
+.arthurmorgan .t-15,
+.arthurmorgan .t-16,
+.arthurmorgan .t-22,
+.arthurmorgan .t-53,
+.arthurmorgan .t-54,
+.arthurmorgan .t-57,
+.arthurmorgan .t-58,
+.arthurmorgan .t-63,
+.arthurmorgan .t-64,
+.arthurmorgan .t-65,
+.arthurmorgan .t-66,
+.arthurmorgan .t-68,
+.arthurmorgan .t-70,
+.arthurmorgan .t-71,
+.arthurmorgan .t-72,
+.arthurmorgan .t-73 {background-color: #FEC18F;}
+
+/* Skin 2 */
+.arthurmorgan .t-13,
+.arthurmorgan .t-20,
+.arthurmorgan .t-21,
+.arthurmorgan .t-55,
+.arthurmorgan .t-56,
+.arthurmorgan .t-60,
+.arthurmorgan .t-61,
+.arthurmorgan .t-62,
+.arthurmorgan .t-67,
+.arthurmorgan .t-69,
+.arthurmorgan .t-74,
+.arthurmorgan .t-75,
+.arthurmorgan .t-76,
+.arthurmorgan .t-77,
+.arthurmorgan .t-78,
+.arthurmorgan .t-79,
+.arthurmorgan .t-80,
+.arthurmorgan .t-81,
+.arthurmorgan .t-82,
+.arthurmorgan .t-83 {background-color: #FE6237;}
+
+/* Silver */
+.arthurmorgan .t-91,
+.arthurmorgan .t-92,
+.arthurmorgan .t-93,
+.arthurmorgan .t-95,
+.arthurmorgan .t-96,
+.arthurmorgan .t-97,
+.arthurmorgan .t-98,
+.arthurmorgan .t-99,
+.arthurmorgan .t-100,
+.arthurmorgan .t-101,
+.arthurmorgan .t-104,
+.arthurmorgan .t-106,
+.arthurmorgan .t-108,
+.arthurmorgan .t-110,
+.arthurmorgan .t-112 {background-color: #7B807E;}
+
+/* Gold */
+.arthurmorgan .t-113,
+.arthurmorgan .t-114,
+.arthurmorgan .t-115,
+.arthurmorgan .t-116,
+.arthurmorgan .t-117,
+.arthurmorgan .t-118,
+.arthurmorgan .t-119,
+.arthurmorgan .t-120 {background-color: #FCA600;}
+
+
+
+
+
+
+/* The Frontier */
+
+.thefrontier .t-1 {-webkit-clip-path: polygon(63% 83%, 60% 83%, 64% 78%);}
+.thefrontier .t-2 {-webkit-clip-path: polygon(64% 83%, 62% 83%, 65% 81%);}
+.thefrontier .t-3 {-webkit-clip-path: polygon(55% 15%, 51% 22%, 51% 14%);}
+.thefrontier .t-4 {-webkit-clip-path: polygon(55% 15%, 51% 22%, 58% 18%);}
+.thefrontier .t-5 {-webkit-clip-path: polygon(59% 22%, 51% 22%, 58% 18%);}
+
+.thefrontier .t-6 {-webkit-clip-path: polygon(43% 22%, 51% 22%, 44% 18%);}
+.thefrontier .t-7 {-webkit-clip-path: polygon(47% 15%, 51% 22%, 44% 18%);}
+.thefrontier .t-8 {-webkit-clip-path: polygon(47% 15%, 51% 22%, 51% 14%);}
+.thefrontier .t-9 {-webkit-clip-path: polygon(55% 29%, 51% 22%, 51% 30%);}
+.thefrontier .t-10 {-webkit-clip-path: polygon(55% 29%, 51% 22%, 58% 26%);}
+
+.thefrontier .t-11 {-webkit-clip-path: polygon(59% 22%, 51% 22%, 58% 26%);}
+.thefrontier .t-12 {-webkit-clip-path: polygon(43% 22%, 51% 22%, 44% 26%);}
+.thefrontier .t-13 {-webkit-clip-path: polygon(47% 29%, 51% 22%, 44% 26%);}
+.thefrontier .t-14 {-webkit-clip-path: polygon(47% 29%, 51% 22%, 51% 30%);}
+.thefrontier .t-15 {-webkit-clip-path: polygon(0% 100%, 0% 83%, 100% 100%);}
+
+.thefrontier .t-16 {-webkit-clip-path: polygon(100% 83%, 0% 83%, 100% 100%);}
+.thefrontier .t-17 {-webkit-clip-path: polygon(25% 83%, 22% 83%, 24% 74%);}
+.thefrontier .t-18 {-webkit-clip-path: polygon(25% 73%, 25% 83%, 24% 74%);}
+.thefrontier .t-19 {-webkit-clip-path: polygon(25% 73%, 28% 75%, 25% 78%);}
+.thefrontier .t-20 {-webkit-clip-path: polygon(25% 73%, 28% 75%, 36% 71%);}
+
+.thefrontier .t-21 {-webkit-clip-path: polygon(25% 73%, 30% 69%, 36% 71%);}
+.thefrontier .t-22 {-webkit-clip-path: polygon(43% 43%, 30% 69%, 36% 71%);}
+.thefrontier .t-23 {-webkit-clip-path: polygon(43% 43%, 39% 69%, 36% 71%);}
+.thefrontier .t-24 {-webkit-clip-path: polygon(43% 43%, 39% 69%, 44% 70%);}
+.thefrontier .t-25 {-webkit-clip-path: polygon(43% 77%, 39% 69%, 44% 70%);}
+
+.thefrontier .t-26 {-webkit-clip-path: polygon(43% 77%, 39% 69%, 41% 83%);}
+.thefrontier .t-27 {-webkit-clip-path: polygon(43% 77%, 43% 83%, 41% 83%);}
+.thefrontier .t-28 {-webkit-clip-path: polygon(43% 43%, 76% 64%, 44% 70%);}
+.thefrontier .t-29 {-webkit-clip-path: polygon(46% 45%, 76% 64%, 77% 56%);}
+.thefrontier .t-30 {-webkit-clip-path: polygon(46% 45%, 74% 51%, 77% 56%);}
+
+.thefrontier .t-31 {-webkit-clip-path: polygon(46% 45%, 74% 51%, 68% 48%);}
+.thefrontier .t-32 {-webkit-clip-path: polygon(62% 66%, 76% 64%, 70% 75%);}
+.thefrontier .t-33 {-webkit-clip-path: polygon(75% 74%, 76% 64%, 72% 71%);}
+.thefrontier .t-34 {-webkit-clip-path: polygon(75% 74%, 75% 65%, 79% 72%);}
+.thefrontier .t-35 {-webkit-clip-path: polygon(75% 74%, 81% 78%, 79% 72%);}
+
+.thefrontier .t-36 {-webkit-clip-path: polygon(82% 75%, 81% 78%, 79% 72%);}
+.thefrontier .t-37 {-webkit-clip-path: polygon(80% 83%, 81% 78%, 78% 76%);}
+.thefrontier .t-38 {-webkit-clip-path: polygon(80% 83%, 81% 78%, 82% 83%);}
+.thefrontier .t-39 {-webkit-clip-path: polygon(70% 75%, 66% 83%, 68% 83%);}
+.thefrontier .t-40 {-webkit-clip-path: polygon(70% 75%, 74% 75%, 68% 83%);}
+
+.thefrontier .t-41 {-webkit-clip-path: polygon(70% 75%, 74% 75%, 72% 71%);}
+.thefrontier .t-42 {-webkit-clip-path: polygon(44% 70%, 55% 69%, 60% 67%);}
+.thefrontier .t-43 {-webkit-clip-path: polygon(40% 75%, 40% 78%, 41% 81%);}
+.thefrontier .t-44 {-webkit-clip-path: polygon(34% 61%, 29% 63%, 31% 67%);}
+.thefrontier .t-45 {-webkit-clip-path: polygon(34% 61%, 29% 63%, 29% 61%);}
+
+.thefrontier .t-46 {-webkit-clip-path: polygon(34% 61%, 28% 57%, 29% 61%);}
+.thefrontier .t-47 {-webkit-clip-path: polygon(34% 61%, 28% 57%, 42% 45%);}
+.thefrontier .t-48 {-webkit-clip-path: polygon(26% 54%, 28% 57%, 42% 45%);}
+.thefrontier .t-49 {-webkit-clip-path: polygon(26% 54%, 24% 48%, 41% 46%);}
+.thefrontier .t-50 {-webkit-clip-path: polygon(37% 42%, 24% 48%, 41% 46%);}
+
+.thefrontier .t-51 {-webkit-clip-path: polygon(37% 42%, 39% 39%, 41% 46%);}
+.thefrontier .t-52 {-webkit-clip-path: polygon(37% 42%, 39% 39%, 36% 40%);}
+.thefrontier .t-53 {-webkit-clip-path: polygon(37% 42%, 24% 48%, 35% 40%);}
+.thefrontier .t-54 {-webkit-clip-path: polygon(23% 45%, 24% 48%, 35% 40%);}
+.thefrontier .t-55 {-webkit-clip-path: polygon(23% 45%, 22% 44%, 35% 40%);}
+
+.thefrontier .t-56 {-webkit-clip-path: polygon(15% 35%, 22% 44%, 35% 40%);}
+.thefrontier .t-57 {-webkit-clip-path: polygon(15% 35%, 32% 38%, 33% 40%);}
+.thefrontier .t-58 {-webkit-clip-path: polygon(15% 35%, 32% 38%, 28% 35%);}
+.thefrontier .t-59 {-webkit-clip-path: polygon(15% 35%, 25% 34%, 28% 35%);}
+.thefrontier .t-60 {-webkit-clip-path: polygon(15% 35%, 25% 34%, 24% 33%);}
+
+.thefrontier .t-61 {-webkit-clip-path: polygon(15% 35%, 21% 32%, 24% 33%);}
+.thefrontier .t-62 {-webkit-clip-path: polygon(15% 35%, 21% 32%, 17% 33%);}
+.thefrontier .t-63 {-webkit-clip-path: polygon(16% 32%, 21% 32%, 17% 33%);}
+.thefrontier .t-64 {-webkit-clip-path: polygon(16% 32%, 19% 32%, 16% 30%);}
+.thefrontier .t-65 {-webkit-clip-path: polygon(15% 35%, 22% 44%, 14% 37%);}
+
+.thefrontier .t-66 {-webkit-clip-path: polygon(13% 38%, 22% 44%, 14% 37%);}
+.thefrontier .t-67 {-webkit-clip-path: polygon(13% 38%, 21% 43%, 16% 46%);}
+.thefrontier .t-68 {-webkit-clip-path: polygon(13% 38%, 11% 41%, 16% 46%);}
+.thefrontier .t-69 {-webkit-clip-path: polygon(10% 44%, 11% 41%, 16% 46%);}
+.thefrontier .t-70 {-webkit-clip-path: polygon(10% 44%, 9% 46%, 16% 46%);}
+
+.thefrontier .t-71 {-webkit-clip-path: polygon(10% 47%, 9% 46%, 16% 46%);}
+.thefrontier .t-72 {-webkit-clip-path: polygon(10% 47%, 12% 48%, 16% 46%);}
+.thefrontier .t-73 {-webkit-clip-path: polygon(14% 48%, 12% 48%, 16% 46%);}
+.thefrontier .t-74 {-webkit-clip-path: polygon(15% 47%, 18% 49%, 16% 46%);}
+.thefrontier .t-75 {-webkit-clip-path: polygon(25% 50%, 18% 49%, 17% 48%);}
+
+.thefrontier .t-76 {-webkit-clip-path: polygon(25% 50%, 24% 48%, 17% 48%);}
+.thefrontier .t-77 {-webkit-clip-path: polygon(55% 28%, 58% 47%, 46% 45%);}
+.thefrontier .t-78 {-webkit-clip-path: polygon(55% 28%, 58% 47%, 57% 30%);}
+.thefrontier .t-79 {-webkit-clip-path: polygon(59% 34%, 57% 48%, 57% 30%);}
+.thefrontier .t-80 {-webkit-clip-path: polygon(59% 34%, 59% 39%, 58% 41%);}
+
+.thefrontier .t-81 {-webkit-clip-path: polygon(63% 48%, 62% 44%, 58% 47%);}
+.thefrontier .t-82 {-webkit-clip-path: polygon(57% 45%, 62% 44%, 58% 47%);}
+.thefrontier .t-83 {-webkit-clip-path: polygon(57% 45%, 62% 44%, 60% 43%);}
+.thefrontier .t-84 {-webkit-clip-path: polygon(47% 45%, 49% 40%, 46% 40%);}
+.thefrontier .t-85 {-webkit-clip-path: polygon(47% 45%, 45% 41%, 46% 40%);}
+
+.thefrontier .t-86 {-webkit-clip-path: polygon(47% 45%, 45% 41%, 43% 40%);}
+.thefrontier .t-87 {-webkit-clip-path: polygon(46% 43%, 43% 42%, 43% 40%);}
+.thefrontier .t-88 {-webkit-clip-path: polygon(46% 43%, 43% 42%, 43% 43%);}
+.thefrontier .t-89 {-webkit-clip-path: polygon(42% 41%, 43% 40%, 43% 43%);}
+.thefrontier .t-90 {-webkit-clip-path: polygon(55% 28%, 48% 36%, 49% 40%);}
+
+.thefrontier .t-91 {-webkit-clip-path: polygon(55% 28%, 48% 36%, 49% 31%);}
+.thefrontier .t-92 {-webkit-clip-path: polygon(55% 28%, 47% 31%, 49% 31%);}
+.thefrontier .t-93 {-webkit-clip-path: polygon(55% 28%, 47% 31%, 48% 29%);}
+.thefrontier .t-94 {-webkit-clip-path: polygon(55% 28%, 53% 27%, 48% 29%);}
+.thefrontier .t-95 {-webkit-clip-path: polygon(54% 22%, 53% 27%, 48% 29%);}
+
+.thefrontier .t-96 {-webkit-clip-path: polygon(54% 22%, 49% 21%, 48% 24%);}
+.thefrontier .t-97 {-webkit-clip-path: polygon(49% 24%, 49% 23%, 45% 24%);}
+.thefrontier .t-98 {-webkit-clip-path: polygon(53% 26%, 53% 24%, 56% 27%);}
+.thefrontier .t-99 {-webkit-clip-path: polygon(47% 26%, 54% 22%, 50% 27%);}
+.thefrontier .t-100 {-webkit-clip-path: polygon(48% 24%, 54% 22%, 47% 26%);}
+
+.thefrontier .t-101 {-webkit-clip-path: polygon(48% 26%, 49% 28%, 50% 27%);}
+.thefrontier .t-102 {-webkit-clip-path: polygon(48% 26%, 49% 28%, 47.5% 28.5%);}
+.thefrontier .t-103 {-webkit-clip-path: polygon(83% 55%, 74% 51%, 77% 56%);}
+.thefrontier .t-104 {-webkit-clip-path: polygon(83% 55%, 76% 52%, 77% 51%);}
+.thefrontier .t-105 {-webkit-clip-path: polygon(83% 55%, 80% 52%, 77% 51%);}
+
+.thefrontier .t-106 {-webkit-clip-path: polygon(83% 55%, 80% 52%, 82% 53%);}
+.thefrontier .t-107 {-webkit-clip-path: polygon(83% 55%, 90% 80%, 77% 56%);}
+.thefrontier .t-108 {-webkit-clip-path: polygon(83% 67%, 85% 82%, 81% 63%);}
+.thefrontier .t-109 {-webkit-clip-path: polygon(85% 70%, 86% 82%, 83% 67%);}
+.thefrontier .t-110 {-webkit-clip-path: polygon(85% 70%, 87% 79%, 87% 74%);}
+
+.thefrontier .t-111 {-webkit-clip-path: polygon(88% 76%, 89% 83%, 87% 74%);}
+.thefrontier .t-112 {-webkit-clip-path: polygon(83% 55%, 88% 64%, 84% 59%);}
+.thefrontier .t-113 {-webkit-clip-path: polygon(86% 61%, 88% 73%, 84% 59%);}
+.thefrontier .t-114 {-webkit-clip-path: polygon(91% 77%, 88% 73%, 87% 67%);}
+.thefrontier .t-115 {-webkit-clip-path: polygon(89% 70%, 86% 64%, 86% 61%);}
+
+.thefrontier .t-116 {-webkit-clip-path: polygon(58% 83%, 60% 83%, 61% 73%);}
+.thefrontier .t-117 {-webkit-clip-path: polygon(58% 83%, 60% 83%, 59% 77%);}
+.thefrontier .t-118 {-webkit-clip-path: polygon(58% 83%, 60% 83%, 57% 80%);}
+.thefrontier .t-119 {-webkit-clip-path: polygon(58% 83%, 60% 83%, 62% 74%);}
+.thefrontier .t-120 {-webkit-clip-path: polygon(61% 83%, 59% 83%, 62% 78%);}
+
+/* Black */
+.thefrontier .t-1,
+.thefrontier .t-2,
+.thefrontier .t-15,
+.thefrontier .t-16,
+.thefrontier .t-17,
+.thefrontier .t-18,
+.thefrontier .t-19,
+.thefrontier .t-20,
+.thefrontier .t-21,
+.thefrontier .t-22,
+.thefrontier .t-23,
+.thefrontier .t-24,
+.thefrontier .t-25,
+.thefrontier .t-26,
+.thefrontier .t-27,
+.thefrontier .t-28,
+.thefrontier .t-29,
+.thefrontier .t-30,
+.thefrontier .t-31,
+.thefrontier .t-32,
+.thefrontier .t-33,
+.thefrontier .t-34,
+.thefrontier .t-35,
+.thefrontier .t-36,
+.thefrontier .t-37,
+.thefrontier .t-38,
+.thefrontier .t-39,
+.thefrontier .t-40,
+.thefrontier .t-41,
+.thefrontier .t-42,
+.thefrontier .t-43,
+.thefrontier .t-44,
+.thefrontier .t-45,
+.thefrontier .t-46,
+.thefrontier .t-47,
+.thefrontier .t-48,
+.thefrontier .t-49,
+.thefrontier .t-50,
+.thefrontier .t-51,
+.thefrontier .t-52,
+.thefrontier .t-53,
+.thefrontier .t-54,
+.thefrontier .t-55,
+.thefrontier .t-56,
+.thefrontier .t-57,
+.thefrontier .t-58,
+.thefrontier .t-59,
+.thefrontier .t-60,
+.thefrontier .t-61,
+.thefrontier .t-62,
+.thefrontier .t-63,
+.thefrontier .t-64,
+.thefrontier .t-65,
+.thefrontier .t-66,
+.thefrontier .t-67,
+.thefrontier .t-68,
+.thefrontier .t-69,
+.thefrontier .t-70,
+.thefrontier .t-71,
+.thefrontier .t-72,
+.thefrontier .t-73,
+.thefrontier .t-74,
+.thefrontier .t-75,
+.thefrontier .t-76,
+.thefrontier .t-77,
+.thefrontier .t-78,
+.thefrontier .t-79,
+.thefrontier .t-80,
+.thefrontier .t-81,
+.thefrontier .t-82,
+.thefrontier .t-83,
+.thefrontier .t-84,
+.thefrontier .t-85,
+.thefrontier .t-86,
+.thefrontier .t-87,
+.thefrontier .t-88,
+.thefrontier .t-89,
+.thefrontier .t-90,
+.thefrontier .t-91,
+.thefrontier .t-92,
+.thefrontier .t-93,
+.thefrontier .t-94,
+.thefrontier .t-95,
+.thefrontier .t-96,
+.thefrontier .t-97,
+.thefrontier .t-98,
+.thefrontier .t-99,
+.thefrontier .t-100,
+.thefrontier .t-101,
+.thefrontier .t-102,
+.thefrontier .t-103,
+.thefrontier .t-104,
+.thefrontier .t-105,
+.thefrontier .t-106,
+.thefrontier .t-107,
+.thefrontier .t-108,
+.thefrontier .t-109,
+.thefrontier .t-110,
+.thefrontier .t-111,
+.thefrontier .t-112,
+.thefrontier .t-113,
+.thefrontier .t-114,
+.thefrontier .t-115,
+.thefrontier .t-116,
+.thefrontier .t-117,
+.thefrontier .t-118,
+.thefrontier .t-119,
+.thefrontier .t-120 {background-color: #000000;}
+
+/* Orange */
+.thefrontier .t-3,
+.thefrontier .t-4,
+.thefrontier .t-5,
+.thefrontier .t-6,
+.thefrontier .t-7,
+.thefrontier .t-8,
+.thefrontier .t-9,
+.thefrontier .t-10,
+.thefrontier .t-11,
+.thefrontier .t-12,
+.thefrontier .t-13,
+.thefrontier .t-14 {background-color: #FCD183;}
+
+
+
+
+
+ 
+@media screen and (max-width: 960px) {
+
+.stage,
+.main-stage {
+    width: 320px;
+    height: 320px;
+}
+.console {width: 280px;}
+.console h1 {font-size: 42px;}
+.console button {font-size: 24px;}
+
+}
